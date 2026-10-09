@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartDesk AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="chat-header">
+
+            <div class="brand">
+
+                <div class="bot-icon">
+                    🤖
+                </div>
+
+                <div>
+                    <h1>SmartDesk AI</h1>
+                    <p>Intelligent Customer Support</p>
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Online
+                </div>
+
+                <!-- Theme Button -->
+                <button
+                    id="themeButton"
+                    class="theme-button"
+                    title="Switch theme">
+                    🌙
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Chat Area -->
+        <main class="chat-container">
+
+            <!-- Welcome Section -->
+            <div class="welcome-message">
+
+                <div class="welcome-icon">
+                    🤖
+                </div>
+
+                <h2>Welcome to SmartDesk AI</h2>
+
+                <p>
+                    Your intelligent customer-support assistant.
+                    Ask me about services, support, working hours and more.
+                </p>
+
+
+                <!-- Quick Questions -->
+                <div class="quick-actions">
+
+                    <button onclick="sendQuickMessage('What services do you provide?')">
+                        💼 Services
+                    </button>
+
+                    <button onclick="sendQuickMessage('What are your working hours?')">
+                        🕐 Working Hours
+                    </button>
+
+                    <button onclick="sendQuickMessage('What is your name?')">
+                        🤖 About AI
+                    </button>
+
+                    <button onclick="sendQuickMessage('How can I contact support?')">
+                        📞 Contact
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chat Messages -->
+            <div id="chatMessages"></div>
+
+        </main>
+
+
+        <!-- Input Area -->
+        <footer class="input-area">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask SmartDesk AI anything..."
+                autocomplete="off"
+            >
+
+            <button id="sendButton">
+                Send
+            </button>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
